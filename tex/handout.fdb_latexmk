@@ -1,9 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1668804389 "/home/seshan/Documents/graphs/tex/handout.tex" "handout.pdf" "handout" 1668804390
-  "../london_trains.png" 1668720192 328210 f17cab2f1a65320006b156fc7adb3c15 ""
-  "../maze_bfs_lg.png" 1668720182 6780 a4edf0d9971bab364dd5925f871a73cc ""
+["pdflatex"] 1668837605 "/home/seshan/Documents/graphs/tex/handout.tex" "handout.pdf" "handout" 1668837606
   "/etc/texmf/web2c/texmf.cnf" 1667065086 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/seshan/Documents/graphs/tex/handout.tex" 1668804389 8823 a2fac5888d1e497a0bb579ed7ba95dac ""
+  "/home/seshan/Documents/graphs/tex/handout.tex" 1668837605 8843 9c0ad135d5a0fcc57841698fd590208a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -170,8 +168,10 @@
   "6006.cls" 1668787815 384 f411fb4a110b4b2f556179c762649a53 ""
   "6006.sty" 1668802698 10485 b966ae6a2fcdc90282af7f7a70797a81 ""
   "clrscode4e.sty" 1668788002 17029 9432e4a78a6f600e9dcfe3a0af3445d2 ""
-  "handout.aux" 1668804390 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
-  "handout.tex" 1668804389 8823 a2fac5888d1e497a0bb579ed7ba95dac ""
+  "figures/london_trains.png" 1668720192 328210 f17cab2f1a65320006b156fc7adb3c15 ""
+  "figures/maze_bfs_lg.png" 1668720182 6780 a4edf0d9971bab364dd5925f871a73cc ""
+  "handout.aux" 1668837606 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "handout.tex" 1668837605 8843 9c0ad135d5a0fcc57841698fd590208a ""
   (generated)
   "handout.aux"
   "handout.log"
