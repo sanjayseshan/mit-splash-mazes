@@ -1,0 +1,18 @@
+\frametitle{Reference}
+
+    \begin{lstlisting}
+from PIL import Image
+
+im = Image.open("maze_bfs.png")
+
+pixels = im.load()
+
+rdim, cdim = im.size
+
+red = (255,0,0, 255)
+blue = (0,0,255, 255)
+white = (255,255,255, 255)
+black = (0,0,0, 255)
+    \end{lstlisting}
+
+    \url{https://github.com/sanjayseshan/mit-splash-mazes}
