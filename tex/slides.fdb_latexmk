@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1668889689 "/home/seshan/Documents/graphs/tex/slides.tex" "slides.pdf" "slides" 1668889690
+["pdflatex"] 1668890227 "/home/seshan/Documents/graphs/tex/slides.tex" "slides.pdf" "slides" 1668890228
   "../bfs_out.png" 1668729460 189 d2660c6a2eae24dbdd622ad9c910ed85 ""
   "../dfs_out.png" 1668729458 200 50baac66dd43cfbd7bd320f073e675d1 ""
   "/etc/texmf/web2c/texmf.cnf" 1667065086 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/seshan/Documents/graphs/tex/slides.tex" 1668889689 17563 a60e72af3f073eaa9357c9cc3dd31a61 ""
+  "/home/seshan/Documents/graphs/tex/slides.tex" 1668890227 17564 06caf6aee724b5bf760426728bdd8189 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -221,11 +221,11 @@
   "figures/london_trains.png" 1668720192 328210 f17cab2f1a65320006b156fc7adb3c15 ""
   "figures/maze_bfs_lg.png" 1668720182 6780 a4edf0d9971bab364dd5925f871a73cc ""
   "figures/maze_bfs_lg_rhr.png" 1668838966 17950 63cdb61b609e973b0730a16233674215 ""
-  "slides.aux" 1668889690 4052 29fc84e0c5128159dcc982978a02e0b3 "pdflatex"
-  "slides.nav" 1668889690 2411 8c6bbe43bf923ac88764b8cf06f7ccff "pdflatex"
-  "slides.out" 1668889689 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "slides.tex" 1668889689 17563 a60e72af3f073eaa9357c9cc3dd31a61 ""
-  "slides.vrb" 1668889690 317 7752bef5fa7274d79f0c99af93b57b81 "pdflatex"
+  "slides.aux" 1668890228 4052 29fc84e0c5128159dcc982978a02e0b3 "pdflatex"
+  "slides.nav" 1668890228 2411 8c6bbe43bf923ac88764b8cf06f7ccff "pdflatex"
+  "slides.out" 1668890228 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "slides.tex" 1668890227 17564 06caf6aee724b5bf760426728bdd8189 ""
+  "slides.vrb" 1668890228 317 7752bef5fa7274d79f0c99af93b57b81 "pdflatex"
   (generated)
   "slides.aux"
   "slides.log"
