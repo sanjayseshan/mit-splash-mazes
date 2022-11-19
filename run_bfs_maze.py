@@ -1,6 +1,7 @@
 from PIL import Image
 
-im = Image.open("maze_bfs.png")
+# im = Image.open("maze_bfs.png")
+im = Image.open("large_maze.png")
 print(im.format, im.size, im.mode)
 
 pixels = im.load()
@@ -25,7 +26,6 @@ def run_bfs(pixels,rdim, cdim):
                 elif pixels[new[0],new[1]] == white:
                     if new not in path:
                         new_path = path+(new,)
-                        print(new_path)
                         Q.append(new_path)
     return None
 
@@ -36,4 +36,4 @@ for r,c in pos:
 
 # im.show()
 
-im.save("bfs_out.png")
+im.save("bfs_out_lg.png")

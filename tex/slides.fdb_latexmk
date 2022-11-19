@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1668841058 "/home/seshan/Documents/graphs/tex/slides.tex" "slides.pdf" "slides" 1668841059
+["pdflatex"] 1668889689 "/home/seshan/Documents/graphs/tex/slides.tex" "slides.pdf" "slides" 1668889690
   "../bfs_out.png" 1668729460 189 d2660c6a2eae24dbdd622ad9c910ed85 ""
   "../dfs_out.png" 1668729458 200 50baac66dd43cfbd7bd320f073e675d1 ""
   "/etc/texmf/web2c/texmf.cnf" 1667065086 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/seshan/Documents/graphs/tex/slides.tex" 1668841057 13468 39a0fafb8769636d07008edb9b0991b2 ""
+  "/home/seshan/Documents/graphs/tex/slides.tex" 1668889689 17563 a60e72af3f073eaa9357c9cc3dd31a61 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -31,6 +31,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb" 1248133631 25150 e0d09798d232ab9d00c5c0a8df6cc22d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb" 1248133631 29078 718ea4567ceff944262b0f5b0800e1d9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
@@ -220,11 +221,11 @@
   "figures/london_trains.png" 1668720192 328210 f17cab2f1a65320006b156fc7adb3c15 ""
   "figures/maze_bfs_lg.png" 1668720182 6780 a4edf0d9971bab364dd5925f871a73cc ""
   "figures/maze_bfs_lg_rhr.png" 1668838966 17950 63cdb61b609e973b0730a16233674215 ""
-  "slides.aux" 1668841058 3536 377f8f97c20a36ca5ac048f761b49ec5 "pdflatex"
-  "slides.nav" 1668841058 2039 5a4196ea47006e239fc20568aaec1af6 "pdflatex"
-  "slides.out" 1668841058 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "slides.tex" 1668841057 13468 39a0fafb8769636d07008edb9b0991b2 ""
-  "slides.vrb" 1668841058 317 7752bef5fa7274d79f0c99af93b57b81 "pdflatex"
+  "slides.aux" 1668889690 4052 29fc84e0c5128159dcc982978a02e0b3 "pdflatex"
+  "slides.nav" 1668889690 2411 8c6bbe43bf923ac88764b8cf06f7ccff "pdflatex"
+  "slides.out" 1668889689 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "slides.tex" 1668889689 17563 a60e72af3f073eaa9357c9cc3dd31a61 ""
+  "slides.vrb" 1668889690 317 7752bef5fa7274d79f0c99af93b57b81 "pdflatex"
   (generated)
   "slides.aux"
   "slides.log"

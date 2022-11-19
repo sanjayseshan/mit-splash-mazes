@@ -1,5 +1,6 @@
 from PIL import Image
-
+import sys
+sys.setrecursionlimit(15000)
 im = Image.open("maze_bfs.png")
 print(im.format, im.size, im.mode)
 

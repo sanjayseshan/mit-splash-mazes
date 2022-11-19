@@ -127,6 +127,17 @@
         
             
             \end{frame}
+            \begin{frame}[fragile]
+                \frametitle{DFS Algorithm}
+\begin{lstlisting}
+procedure DFS(G, v) is
+    label v as discovered
+    for all directed edges from v to w that are in G.adjacentEdges(v) do
+        if vertex w is not labeled as discovered then
+            recursively call DFS(G, w)
+\end{lstlisting}
+
+            \end{frame}
 
             \begin{frame}[fragile]
                 \frametitle{DFS Algorithm}
@@ -169,6 +180,7 @@ pos = run_dfs(pixels,(0,1),set())\end{lstlisting}
                 \end{frame}
     
 
+                
 
             \begin{frame}
                 \frametitle{BFS Algorithm}
@@ -183,6 +195,26 @@ pos = run_dfs(pixels,(0,1),set())\end{lstlisting}
             
                 
                 \end{frame}
+                \begin{frame}[fragile]
+                    \frametitle{BFS Algorithm}
+    \begin{lstlisting}
+procedure BFS(G, root) is
+    let Q be a queue
+    label root as explored
+    Q.enqueue(root)
+    while Q is not empty do
+        v := Q.dequeue()
+        if v is the goal then
+            return v
+        for all edges from v to w in G.adjacentEdges(v) do
+            if w is not labeled as explored then
+                label w as explored
+                w.parent := v
+                Q.enqueue(w)
+\end{lstlisting}
+    
+                \end{frame}
+
 
                 \begin{frame}[fragile]
                     \frametitle{BFS Algorithm}
@@ -209,7 +241,7 @@ def run_bfs(pixels,rdim, cdim):
                 \begin{frame}[fragile]
                     \frametitle{Expanded Problem -- Train routes in Europe}
 \begin{itemize}
-    \item What is the shortest path from London to Metz?
+    \item What is the shortest path from London to Metz? Consider this as a maze with different distances between cities.
 
     \item In terms of stops? 
 
@@ -224,12 +256,13 @@ def run_bfs(pixels,rdim, cdim):
 
 \end{frame}
 
+
 \begin{frame}[fragile]
     \frametitle{Expanded Problem -- Train routes in Europe}
 \begin{itemize}
 \item What is the shortest path from London to Metz?
 
-\item In terms of stops? 
+\item In terms of stops? (BFS)
 
 \textit{London to Dover to Calais to Lille to Paris to Metz}
 
@@ -242,6 +275,76 @@ def run_bfs(pixels,rdim, cdim):
 \end{itemize}
 
 \end{frame}
+
+
+
+\begin{frame}[fragile]
+    \frametitle{Mazes to Graphs}
+
+\begin{itemize}
+    \item 
+Finding a path for trains is similar to solving a maze -- there are possible routes and forks that must be followed 
+\item How can we convert a maze to a graph? What is an intersection? What is a path?
+\item Each node is a "vertex" and each path is an "edge", edges can be directed. Solving paths in graphs is similar to solving mazes. The same algorithms apply.
+\end{itemize}
+
+
+Intersection:
+
+    \begin{tikzpicture}[
+node distance = 5mm and 10mm,
+every state/.append style = {inner sep=0pt, fill=gray!10,
+                             minimum size=7mm},
+every edge/.style = {draw, -Triangle, bend angle=15},
+                auto=right,
+                        ]
+\node (s1) [state]         {...};
+\node (s2) [state, right=of s1]   {A};
+\node (s3) [state, below=of s2]         {...};
+% \node (s4) [state,  right=of s3]   {C};
+\node (s5) [state, right =of s2]   {...};
+\draw   (s1) edge [""]             (s2)
+(s1) edge [""]             (s2)
+(s2) edge [""]             (s1)
+(s2) edge [""]             (s3)
+(s3) edge [""]             (s2)
+% (s4) edge [""]             (s5)
+(s5) edge [""]             (s2)
+(s2) edge [""]             (s5);
+% (s4) edge [""]             (s3)
+   \end{tikzpicture}
+                
+   Standard path:
+
+   \begin{tikzpicture}[
+    node distance = 5mm and 10mm,
+    every state/.append style = {inner sep=0pt, fill=gray!10,
+                                 minimum size=7mm},
+    every edge/.style = {draw, -Triangle, bend angle=15},
+                    auto=right,
+                            ]
+    \node (s1) [state]         {...};
+    \node (s2) [state, right=of s1]   {A};
+    % \node (s3) [state, below=of s2]         {D};
+    % \node (s4) [state,  right=of s3]   {C};
+    \node (s5) [state, right =of s2]   {...};
+    \draw   (s1) edge [""]             (s2)
+    (s1) edge [""]             (s2)
+    (s2) edge [""]             (s1)
+    % (s2) edge [""]             (s3)
+    % (s3) edge [""]             (s2)
+    % (s4) edge [""]             (s5)
+    (s5) edge [""]             (s2)
+    (s2) edge [""]             (s5);
+    % (s4) edge [""]             (s3)
+       \end{tikzpicture}
+%    This is called Dijkstra's algorithm.
+
+%    Can we represent the above map, or a maze, like this?
+
+
+\end{frame}
+
 
 \begin{frame}[fragile]
     \frametitle{Dijkstra's Algorithm}
@@ -283,7 +386,6 @@ every edge/.style = {draw, -Triangle, bend angle=15},
 
 \end{frame}
 
-
 \begin{frame}[fragile]
     \frametitle{Dijkstra's Algorithm}
 
@@ -324,6 +426,37 @@ every edge/.style = {draw, -Triangle, bend angle=15},
 \end{frame}
 
 
+\begin{frame}[fragile]
+    \frametitle{Dijkstra's Algorithm}
+
+%     for each vertex v in Graph.Vertices:
+%     dist[v] ← INFINITY
+%     prev[v] ← UNDEFINED
+%     add v to Q
+% dist[source] ← 0
+
+% if alt < dist[v]:
+%                     dist[v] ← alt
+%                     prev[v] ← u
+
+\begin{lstlisting}
+function Dijkstra(Graph, source):
+    while Q is not empty:
+            u <- vertex in Q with min dist[u]
+            remove u from Q
+            
+            for each neighbor v of u still in Q:
+                alt <- dist[u] + Graph.Edges(u, v)
+                push (prev[v] <- u with dist[v] <- alt) to Q
+
+        if u is target:
+            return path prev[]
+   
+\end{lstlisting}
+
+\end{frame}
+
+
 
 \begin{frame}[fragile]
     \frametitle{Dijkstra's Algorithm}
@@ -356,9 +489,10 @@ def run_dijkstra(nodes):
     \begin{enumerate}[(1)]
         \item Simple maze using DFS
         \item Simple maze using BFS
+        \item Large maze using BFS
         \item Simple graph using Dijkstra's algorithm
         \item Map of European trains using Dijkstra's algorithm
-        \item Map of Cambridge using a Dijkstra's algorithm on a larger set
+        \item Map of Cambridge using Dijkstra's algorithm
     \end{enumerate}
 
 \end{frame}
@@ -393,7 +527,7 @@ def run_dijkstra(nodes):
 
         \item How fast do these run? Can we make them faster?
 
-        \textit{For those curious, our examples are inefficient, but we can make these run in $O(V+E)$ time for BFS and DFS and $O(E + V\log V)$ time for Dijkstra's. We can improve our array operations by using more advanced algorithms and data structures. We can create a better representation of grids. This is more for another class.}
+        \textit{For those curious, our examples are inefficient, but we can make these run in $O(|V|+|E|)$ time for BFS and DFS and $O(|E| + |V|\log |V|)$ time for Dijkstra's (E is the number of edges and V vertices). We can improve our array operations by using more advanced algorithms and data structures. We can create a better representation of grids. This is more for another class.}
 
     \end{enumerate}
 
