@@ -1,6 +1,6 @@
 from PIL import Image
 
-# im = Image.open("maze_bfs.png")
+#im = Image.open("maze_bfs.png")
 im = Image.open("large_maze.png")
 print(im.format, im.size, im.mode)
 
@@ -35,5 +35,5 @@ for r,c in pos:
     pixels[r,c] = blue
 
 # im.show()
-
 im.save("bfs_out_lg.png")
+#im.save("bfs_out.png")
